@@ -249,6 +249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidth: 16
+  min: 0
+  max: 16
 --- !u!1 &159376210
 GameObject:
   m_ObjectHideFlags: 0
