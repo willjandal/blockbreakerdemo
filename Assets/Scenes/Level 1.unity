@@ -4131,9 +4131,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1179694999526492260, guid: f69ec20f731462d49b52035ddab62d71,
         type: 3}
+      propertyPath: ballSound.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179694999526492260, guid: f69ec20f731462d49b52035ddab62d71,
+        type: 3}
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 119316902}
+    - target: {fileID: 1179694999526492260, guid: f69ec20f731462d49b52035ddab62d71,
+        type: 3}
+      propertyPath: ballSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 447e482ca80017145a436974c2e78ece, type: 3}
+    - target: {fileID: 1179694999526492260, guid: f69ec20f731462d49b52035ddab62d71,
+        type: 3}
+      propertyPath: ballSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: cfd807ce77829744a99ecafde01c6aa0, type: 3}
+    - target: {fileID: 1179694999526492260, guid: f69ec20f731462d49b52035ddab62d71,
+        type: 3}
+      propertyPath: ballSound.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 104b2f929f2894a428517be4a71c7764, type: 3}
+    - target: {fileID: 1179694999526492260, guid: f69ec20f731462d49b52035ddab62d71,
+        type: 3}
+      propertyPath: ballSound.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: e7745249e9929594fbd6baa1daf8c21c, type: 3}
+    - target: {fileID: 1179694999526492260, guid: f69ec20f731462d49b52035ddab62d71,
+        type: 3}
+      propertyPath: ballSound.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f03911d1f990704ebb584a6d85b50f3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f69ec20f731462d49b52035ddab62d71, type: 3}
 --- !u!1001 &2762133650782323245
@@ -4212,6 +4242,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 981283907}
     m_Modifications:
+    - target: {fileID: 3375677786509626784, guid: 4aaebe33b7b164c45beaec21bcf8f8fa,
+        type: 3}
+      propertyPath: breakSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 447e482ca80017145a436974c2e78ece, type: 3}
     - target: {fileID: 3375677786509626786, guid: 4aaebe33b7b164c45beaec21bcf8f8fa,
         type: 3}
       propertyPath: m_LocalPosition.x

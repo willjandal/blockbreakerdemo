@@ -3,22 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Ball : MonoBehaviour
 {
 
     [SerializeField] Paddle paddle1;
     [SerializeField] float xPush = 2f;
     [SerializeField] float yPush = 10f;
+    //[SerializeField] AudioClip[] ballSound;
 
     Vector2 paddleToBallVector;
 
     bool hasStarted = false;
+
+    //cached component references
+    AudioSource myAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
 
         paddleToBallVector = transform.position - paddle1.transform.position;
+        myAudioSource = GetComponent<AudioSource>();
         
     }
 
@@ -57,7 +63,8 @@ public class Ball : MonoBehaviour
     {
         if (hasStarted)
         {
-            GetComponent<AudioSource>().Play();
+            //AudioClip clip = ballSound[UnityEngine.Random.Range(0, ballSound.Length)];
+            myAudioSource.Play();
         }
 
     }
