@@ -7,8 +7,6 @@ public class Block : MonoBehaviour
 
     [SerializeField] AudioClip breakSound;
 
-    //sample code changes
-
     Level level; //Cached Reference
     GameStatus score;
 

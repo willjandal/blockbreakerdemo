@@ -28,4 +28,9 @@ public class Level : MonoBehaviour
             sceneloader.LoadNextScene();
         }
     }
+
+    public void setBlockstoZero()
+    {
+        breakableBlocks = 0;
+    }
 }
