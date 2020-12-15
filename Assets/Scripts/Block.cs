@@ -4,21 +4,53 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-
+    //config params
     [SerializeField] AudioClip breakSound;
     [SerializeField] GameObject particleSFX;
+    [SerializeField] int maxHits = 2;
 
-    Level level; //Cached Reference
+    //cache reference
+    Level level;
+
+    //state variables
+    [SerializeField] int timesHit; // TODO: deserialized on Release
+
+
 
     private void Start()
     {
+        CountBreakableBlocks();
+
+    }
+
+
+    /// <summary>
+    /// Only counts the Breakable Blocks
+    /// </summary>
+    private void CountBreakableBlocks()
+    {
         level = FindObjectOfType<Level>();
-        level.CountBreakableBlocks();
+
+        if (tag == "Breakable")
+        {
+            level.CountBlocks();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DestroyBlock();
+
+        if (tag == "Breakable")
+        {
+            timesHit++;
+
+            if (timesHit >= maxHits)
+            {
+                DestroyBlock();
+            }
+            
+        }
+        
     }
 
     private void DestroyBlock()
