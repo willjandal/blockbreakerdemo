@@ -123,3 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 447e482ca80017145a436974c2e78ece, type: 3}
   particleSFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+  maxHits: 0
+  hitSprites: []
+  timesHit: 0
